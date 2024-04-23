@@ -1,0 +1,13 @@
+server:
+  port: 8888
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/michal-salwin/spring-trains-config
+          skip-ssl-validation: true
+#          try-master-branch: false
+          search-paths: configuration-files
+          order: 0
+
